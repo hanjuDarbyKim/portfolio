@@ -4179,9 +4179,9 @@ div#searchform.jhp {
 											
 										   	box.onkeyup = function(event)
 										   	{
+										   	    var me = ['ㄱ','기','김','ㅎ','하','한','ㅈ','주'];
 										   	    if(count < me.length)
 												{
-											   	    var me = ['ㄱ','기','김','ㅎ','하','한','ㅈ','주'];
 													alert(me.length);
 													event.srcElement.value = me[count];
 											   	    count++;
