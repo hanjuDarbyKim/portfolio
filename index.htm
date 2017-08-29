@@ -4182,11 +4182,13 @@ div#searchform.jhp {
 										   	    var me = ['ㄱ','기','김','ㅎ','하','한','ㅈ','주'];
 										   	    if(count < me.length)
 												{
-													alert(me.length);
 													event.srcElement.value = me[count];
 											   	    count++;
 												}
-												
+										   	    else
+										   	    {
+										   	        event.srcElement.value = "김한주";
+										   	    }
 										   	};
 										    
 										};
