@@ -4181,12 +4181,12 @@ div#searchform.jhp {
 										   	{
 										   		alert(event.keyCode);
 										   	    var me = ['ㄱ','기','김','김ㅎ','김하','김한','김한ㅈ','김한주'];
-										   	    if(count < me.length)
+										   	    if(count < me.length && event.keyCode != 8)
 												{
 													event.srcElement.value = me[count];
 											   	    count++;
 												}
-										   	    else
+										   	    else if(count == me.length-1)
 										   	    {
 										   	        event.srcElement.value = "김한주";
 										   	    }
