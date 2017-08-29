@@ -4166,9 +4166,22 @@ div#searchform.jhp {
 									</button>
 									<div class="lst-c">
 										<input class="lst lst-tbb sbibps" id="lst-ib" maxlength="2048"
-											name="q" autocomplete="off" title="검색" type="text" value=""
+											name="q" autocomplete="off" title="검색" type="text" value="s"
 											aria-label="검색">
 									</div>
+									<script>
+										var count = 0;
+										var box;
+										window.onload = function()
+										{
+										    box = document.getElementById("lst-ib");
+											alert(box.value);										    
+										    
+										};
+									
+									
+									
+									</script>
 								</div>
 							</div>
 						</div>
