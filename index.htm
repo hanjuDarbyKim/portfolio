@@ -4177,10 +4177,15 @@ div#searchform.jhp {
 										    box = document.getElementById("lst-ib");
 											box.focus();
 											
-										   	box.onkeyup = function()
+										   	box.onkeyup = function(event)
 										   	{
-										   	  	alert(box.onfocus);  
-										   	    
+										   	    if(count < me.length)
+												{
+											   	    var me = ['ㄱ','기','김','ㅎ','하','한','ㅈ','주'];
+													event.srcElement.value = me[count];
+											   	    count++;
+												}
+												
 										   	};
 										    
 										};
