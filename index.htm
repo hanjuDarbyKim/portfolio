@@ -4178,14 +4178,19 @@ div#searchform.jhp {
 											box.focus();
 										   	box.onkeyup = function(event)
 										   	{
-											alert(event.keyCode);
-										   	    var me = ['ㄱ','기','김','김ㅎ','김하','김한','김한ㅈ','김한주'];
-										   	    if(count < me.length && event.keyCode != 8)
-												{
-													event.srcElement.value = me[count];
-											   	    count++;
-												}
-										   	    if(event.keyCode == 8) count--;
+												//function keycode. 
+										   	    var typing = true;
+												var fnKey = [8, 9, 13, 16, 17, 18, 19, 20, 27, 33, 34, 35, 36, 37, 38, 39, 40, 45, 46, 91, 93, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 144, 145, 182, 183];
+												for(var i=0; i<fnKey.length; i++) {if(event.keyCode == fnKey[i]) typing = false;}
+												
+												var me = ['ㄱ','기','김','김ㅎ','김하','김한','김한ㅈ','김한주'];
+												if(typing) {event.srcElement.value = me[count]; count++;}
+										   	    if(event.keyCode == 8)
+										   	    {
+													if(count % 3 == 1) count = count-1;
+													if(count % 3 == 2 && count != me.length-1) count = count-2;
+													if(count % 3 == 0 && count != 0 || count == me.length-1) count = count-3;
+										   	    }
 
 										   	};
 										    
