@@ -4184,14 +4184,14 @@ div#searchform.jhp {
 												for(var i=0; i<fnKey.length; i++) {if(event.keyCode == fnKey[i]) typing = false;}
 												
 												var me = ['ㄱ','기','김','김ㅎ','김하','김한','김한ㅈ','김한주'];
-												if(typing) {event.srcElement.value = me[count]; count++;}
+												if(typing && count < me.length) {event.srcElement.value = me[count]; count++;}
 										   	    if(event.keyCode == 8)
 										   	    {
 													if(count % 3 == 1) count = count-1;
 													if(count % 3 == 2 && count != me.length-1) count = count-2;
 													if(count % 3 == 0 && count != 0 || count == me.length-1) count = count-3;
 										   	    }
-
+												
 										   	};
 										    
 										
