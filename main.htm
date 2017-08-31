@@ -262,12 +262,12 @@ div#searchform.jhp {
 							   	box.onfocus = function()
 								{
 								    console.log("in");
-									list.display = "";										    
+								    list.style.visibility = "visible";
 								};
 								box.onblur = function()
 								{
 								    console.log("out");
-								  	list.setAttribute("display", "none");  
+								    list.style.visibility = "hidden";
 								};
 							};
 						</script>
