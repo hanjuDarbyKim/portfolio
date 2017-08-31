@@ -212,39 +212,50 @@ div#searchform.jhp {
 												<path
 													d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg></span>
 									</button>
+									
 									<div class="lst-c">
 										<input class="lst lst-tbb sbibps" id="lst-ib" maxlength="3"
 											name="q" autocomplete="off" title="검색" type="text" value=""
 											aria-label="검색">
+											<div class="gsst_b sbib_c" id="gs_st0" dir="ltr" style="line-height: 44px;"><a class="gsst_a __web-inspector-hide-shortcut__" href="javascript:void(0)" aria-label="입력 도구"><span class="gsok_a gsst_e" id="gs_ok0"><img src="//www.gstatic.com/inputtools/images/tia.png" tia_field_name="q" tia_disable_swap="true" tia_property="web"></span></a><a class="gsst_a __web-inspector-hide-shortcut__" href="javascript:void(0)" aria-label="음성 검색"><span class="gsri_a" id="gsri_ok0"></span></a><div id="chmo"><div id="chm"><div class="chmp"><div class="chmpi chmp"></div></div><div style="display: none;"><div class="chma"></div><div>인식되지 않았습니다. 문제가 있습니다.</div><div><a>다시 말하기</a><a style="padding-left: 10px;">도움말</a></div></div><div style="display: none;">핫워드 감지가 사용 중지되었습니다.<div><a>'Ok Google'이라고 말하세요.</a></div></div></div></div></div>
+											
+											
+											
+											
+											
+											
+											
+											
 									</div>
+									
 								</div>
 							</div>
 						</div>
 						<script>
-										var count = 0;
-										var box;
-										window.onload = function()
-										{
-										    box = document.getElementById("lst-ib");
-											box.focus();
-										   	box.onkeyup = function(event)
-										   	{
-												//function keycode. 
-										   	    var typing = true;
-												var fnKey = [8, 9, 13, 16, 17, 18, 19, 20, 27, 33, 34, 35, 36, 37, 38, 39, 40, 45, 46, 91, 93, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 144, 145, 182, 183];
-												for(var i=0; i<fnKey.length; i++) {if(event.keyCode == fnKey[i]) typing = false;}
-												
-												var me = ['ㄱ','기','김','김ㅎ','김하','김한','김한ㅈ','김한주'];
-												if(typing && count < me.length) {event.srcElement.value = me[count]; count++;}
-										   	    if(event.keyCode == 8)
-										   	    {
-													if(count % 3 == 1) count = count-1;
-													else if(count % 3 == 2 && count != me.length-1) count = count-2;
-													else if(count % 3 == 0 && count != 0 || count == me.length-1) count = count-3;
-										   	    }
-										   	};
-										};
-									</script>
+							var count = 0;
+							var box;
+							window.onload = function()
+							{
+							    box = document.getElementById("lst-ib");
+								box.focus();
+							   	box.onkeyup = function(event)
+							   	{
+									//function keycode. 
+							   	    var typing = true;
+									var fnKey = [8, 9, 13, 16, 17, 18, 19, 20, 27, 33, 34, 35, 36, 37, 38, 39, 40, 45, 46, 91, 93, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 144, 145, 182, 183];
+									for(var i=0; i<fnKey.length; i++) {if(event.keyCode == fnKey[i]) typing = false;}
+									
+									var me = ['ㄱ','기','김','김ㅎ','김하','김한','김한ㅈ','김한주'];
+									if(typing && count < me.length) {event.srcElement.value = me[count]; count++;}
+							   	    if(event.keyCode == 8)
+							   	    {
+										if(count % 3 == 1) count = count-1;
+										else if(count % 3 == 2 && count != me.length-1) count = count-2;
+										else if(count % 3 == 0 && count != 0 || count == me.length-1) count = count-3;
+							   	    }
+							   	};
+							};
+						</script>
 						<div>
 							<div id="pocs"
 								style="display: none; left: 0px; white-space: nowrap; position: absolute">
