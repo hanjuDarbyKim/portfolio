@@ -811,29 +811,29 @@ Fi(1,2);if(Di){var Hi=_.wd(window.document,"LINK");Hi.setAttribute("type","text/
 								<div class="overflow">
 									<div class="children hanju">
 										<div class="child">
-											<a href="#">프로젝트 명 : </a><a href="#">회생시(회사원 생존 시뮬레이션 게임).</a>
+											<a href="#">프로젝트 명 : </a><a href="#" class="under">회생시(회사원 생존 시뮬레이션 게임).</a>
 										</div>
 										<div class="child">
-											<a href="#">목적 : </a><a href="#">클래스 설계를 한 뒤, 프로그램의 흐름을 제어하여 플레이어의 선택에 따라 결말이 달라지는 시뮬레이션 게임의 제작.</a>
+											<a href="#">목적 : </a><a href="#" class="under">클래스 설계를 한 뒤, 프로그램의 흐름을 제어하여 플레이어의 선택에 따라 결말이 달라지는 시뮬레이션 게임의 제작.</a>
 										</div>
 										<div class="child">
 											<a
-												href="#">규모</a><a href="#"> : 팀원 2명, 18시간 작업.</a>
+												href="#">규모</a><a href="#" class="under"> : 팀원 2명, 18시간 작업.</a>
 										</div>
 										<div class="child">
 											<a
 												href="#">개발환경 :</a> <br />
-												<a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;개발툴 -> Eclipse Neon.3 Release (4.6.3)</a> <br />
-												<a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;플랫폼 -> Window 7</a> <br />
-												<a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;사용언어 -> Java</a> <br />
-												<a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;개발환경 -> JDK 1.8.0</a> <br />
-												<a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;테스팅환경 -> 개발환경과 동일</a> <br />
+												<a href="#" class="under">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;개발툴 -> Eclipse Neon.3 Release (4.6.3)</a> <br />
+												<a href="#" class="under">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;플랫폼 -> Window 7</a> <br />
+												<a href="#" class="under">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;사용언어 -> Java</a> <br />
+												<a href="#" class="under">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;개발환경 -> JDK 1.8.0</a> <br />
+												<a href="#" class="under">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;테스팅환경 -> 개발환경과 동일</a> <br />
 										</div>
 										<div class="child">
 											<a href="#">업무순서 :</a> <br />
-												<a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a. 클래스 설계.</a> <br />
-												<a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b. 기능 구현.</a> <br />
-												<a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c. 테스트.</a> <br />
+												<a href="#" class="under">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a. 클래스 설계.</a> <br />
+												<a href="#" class="under">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b. 기능 구현.</a> <br />
+												<a href="#" class="under">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c. 테스트.</a> <br />
 										</div>
 										<div class="child">
 											<a
@@ -842,15 +842,15 @@ Fi(1,2);if(Di){var Hi=_.wd(window.document,"LINK");Hi.setAttribute("type","text/
 										<div class="child">
 											<a
 												href="#">결과 :</a> <br />
-												<a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;시작화면.</a> <br />
-												<a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;이전의 선택에 따라 달라지는 현재 선택지.</a> <br />
-												<a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;사용자의 선택은 결말에 영향을 끼친다.</a> <br />
+												<a href="#" class="under">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;시작화면.</a> <br />
+												<a href="#" class="under">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;이전의 선택에 따라 달라지는 현재 선택지.</a> <br />
+												<a href="#" class="under">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;사용자의 선택은 결말에 영향을 끼친다.</a> <br />
 										</div>
 										<div class="child">
 											<a
 												href="#">비고</a> <br />
-												<a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a. 생에 처음으로 한 개발 프로젝트이다.</a> <br />
-												<a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b. 처음으로 클래스 설계를 해보았고, 이를 통해 프로그램간의 전반적인 흐름을 파악할 수 있었다.</a>
+												<a href="#" class="under">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a. 생에 처음으로 한 개발 프로젝트이다.</a> <br />
+												<a href="#" class="under">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b. 처음으로 클래스 설계를 해보았고, 이를 통해 프로그램간의 전반적인 흐름을 파악할 수 있었다.</a>
 										</div>
 									</div>
 								</div>
@@ -979,16 +979,11 @@ Fi(1,2);if(Di){var Hi=_.wd(window.document,"LINK");Hi.setAttribute("type","text/
 							 font-weight: bold;
 							 padding-right: 0px;
 						}
-						/* .hanju a:NTH-CHILD(2) */
-						.hanju a:NOT(FIRST-CHILD)
+						.hanju a[class="under"]
 						{
 							 padding-left: 0px;
 							 padding-top: 2px;
 							 padding-bottom: 2px;
-						}
-						#box[class="parent selected"] h2
-						{
-							font-size: 23px;
 						}
 						
 					</style>
